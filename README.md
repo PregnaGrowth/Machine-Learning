@@ -48,3 +48,86 @@ Training
 
 Results
 - Trained model is saved as 'Food_pregnagrowth.h5', and training history is logged in 'history.log'. Adjustments can be made based on these results.
+
+
+# Setting Up a Flask App and Deploying it via Google Cloud
+
+This guide will walk you through the process of setting up a Flask web application and deploying it on Google Cloud Platform (GCP). Follow the steps below to get your Flask app up and running in no time.
+
+## Prerequisites
+
+Before you begin, make sure you have the following installed and configured:
+
+- Python (>=3.6)
+- Pip (Python package installer)
+- Google Cloud SDK
+- Google Cloud Project with App Engine enabled
+
+## Getting Started
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/your-username/your-flask-app.git
+    cd your-flask-app
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Set up your Flask app:
+
+    ```bash
+    export FLASK_APP=app.py
+    export FLASK_ENV=development  # For development, change to production for deployment
+    ```
+
+4. Run the app locally:
+
+    ```bash
+    flask run
+    ```
+
+    Visit http://localhost:5000 in your browser to verify that the app is running correctly.
+
+## Deployment to Google Cloud Platform
+
+Follow these steps to deploy your Flask app to GCP:
+
+1. Initialize your Google Cloud project:
+
+    ```bash
+    gcloud init
+    ```
+
+2. Deploy your app to Google App Engine:
+
+    ```bash
+    gcloud app deploy
+    ```
+
+3. Access your deployed app:
+
+    ```bash
+    gcloud app browse
+    ```
+
+Congratulations! Your Flask app is now deployed on Google Cloud Platform.
+
+## Additional Configuration
+
+- Customize the `app.yaml` file for advanced configuration options.
+- Add a custom domain to your App Engine project for a personalized URL.
+
+## Contributing
+
+If you would like to contribute to this project, please follow our [contribution guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
