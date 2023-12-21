@@ -93,6 +93,31 @@ Before you begin, make sure you have the following installed and configured:
 
     Visit http://localhost:5000 in your browser to verify that the app is running correctly.
 
+## API
+
+### 1. API Predictions
+
+- **Endpoint:** `/prediction`
+- **Method:** POST
+- **Deskripsi:** POST image recognition.
+- **Example Usage:**
+
+
+  ## API List
+
+| No.  | Endpoint                    | Metode | Deskripsi                                      |
+|------|-----------------------------|--------|------------------------------------------------|
+| 1    | `/`       | GET    | Get first app. |
+| 2    | `/prediction`                 | POST    | POST image detection.         |                  |
+
+- API usage example to get questions frequently asked by pregnant women
+  ```http
+  POST /prediction
+
+field : image
+
+upload file image in postman
+
 ## Deployment to Google Cloud Platform
 
 Follow these steps to deploy your Flask app to GCP:
